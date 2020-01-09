@@ -40,37 +40,23 @@ Aşağıdaki şema ile nasıl bir tercihte bulunabileceğimizi basit bir şekild
 ![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/blob/master/TL_FN2.png)
 
 
- 🕵 O halde basit bir örnekle hem uçta çalıştırabileceğimiz bir test işlemini bir veri setinden öğrenmiş bir modelin nasıl test için kullanabileceğimize bakalım ve sonra da yalnızca bir kısmını kendi veri setiniz ile eğitip diğer bir kısmında öğrenilen ağırlıkları kullanabileceğiniz versiyonuna bakalım. 
+ 🕵 So let's look at a simple example of how we can use a test process that we can run edge!
 
-### 🔥Bunun için IMAGENET veri seti için ResNet50 derin yapay sinir ağı ile eğitilmiş ve eğitim sonundaki ağırlık parametreleri kaydedilmiştir. 
+### 🔥For this purpose, ResNet50 was trained with deep neural networks for the IMAGENET dataset and weight parameters were recorded at the end of the training.
 
 ---
-⚡️[**Algorithmia** üzerinde kendi modelinizi API olarak herkesin erişimine açabiliyorsunuz.
-**ImageNet** veriseti üzerinde eğitilmiş **ResNet** derin öğrenme modeliyle resim sınıflandırma algoritmasını aşağıdaki linkten üye olarak ücretsiz şekilde deneyebilirsiniz. Bu çalışması için **Yavuz Kömeçoğlu**'na teşekkürler.](https://algorithmia.com/algorithms/yavuzkomecoglu/ImageClassification)
+⚡️[On **Algorithmia** you can make your own model available to everyone as an API.
+With the **ResNet** deep learning model trained on the **ImageNe**t dataset, you can try the image classification algorithm free of charge from the link below. Thanks to **Yavuz Kömeçoğlu** for this work.](https://algorithmia.com/algorithms/yavuzkomecoglu/ImageClassification)
 ![](https://github.com/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/TransferOgrenme_FineTuning/Algortihma.jpg)
 
 ---
- ✏️ **Daha fazla kaynak için aşağıdaki bağlantılardan faydalanabilirsiniz:**
+ ✏️ **Use the links below for more resources:**
 
-[Yapay Zeka ve Derin Öğrenmeye Başlama Rehberi](https://medium.com/deep-learning-turkiye/yapay-zekaya-ba%C5%9Flama-rehberi-91e79d3de8e1)
+[Comparison of Activation Functions for Deep Neural Networks](https://towardsdatascience.com/comparison-of-activation-functions-for-deep-neural-networks-706ac4284c8a)
 
-[Kapsamlı Derin Öğrenme Rehberi](https://github.com/ayyucekizrak/Kapsamli_Derin_Ogrenme_Rehberi)
-
-[Veri Artırma Örnek 1](https://colab.research.google.com/github/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/Regularizasyon%20ve%20Optimizasyon/veriartirma_1.ipynb)
-
-[Veri Artırma Örnek 2](https://colab.research.google.com/github/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/Regularizasyon%20ve%20Optimizasyon/veriartirma_2.ipynb)
-
-[Aktivasyon Fonksiyonları Karşılaştırması](https://github.com/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/tree/master/Aktivasyon_Fonksiyonlarinin_Karsilastirilmasi)
-
-[Optimizasyon Yöntemlerinin Karşılaştırılması](https://github.com/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/tree/master/Optimizasyon_Algoritmalarinin_Karsilastirilmasi)
-
-[Aşırı Öğrenme/Uydurma (Overfitting) ve Erken Durdurma (Early Stopping)](https://github.com/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/Asiri_Uydurma_Overfitting_ve_Erken_Durdurma_Early_Stopping/ReadMe.md)
-
-[Derin Öğrenme ile Artistik Stil Transferi](https://medium.com/deep-learning-turkiye/derin-%C3%B6%C4%9Frenme-ile-artistik-stil-transferi-29256789c7e8)
-
-[Adım Adım Google Colab Ücretsiz TPU Kullanımı](https://medium.com/deep-learning-turkiye/ad%C4%B1m-ad%C4%B1m-google-colab-%C3%BCcretsiz-tpu-kullan%C4%B1m%C4%B1-621dc6e5487d)
+[Step-by-Step Use of Google Colab’s Free TPU](https://medium.com/deep-learning-turkiye/ad%C4%B1m-ad%C4%B1m-google-colab-%C3%BCcretsiz-tpu-kullan%C4%B1m%C4%B1-621dc6e5487dhttps://heartbeat.fritz.ai/step-by-step-use-of-google-colab-free-tpu-75f8629492b3)
 
 ---
 
- ## ⭐️[TensorFlow Hub Örneğini incelemeniz de çok faydalı olacaktır](https://www.tensorflow.org/tutorials/images/hub_with_keras)⭐️
+ ### ⭐️[Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/hub_with_keras)⭐️
  ### ⭐️ [Transfer learning from pre-trained models](https://towardsdatascience.com/transfer-learning-from-pre-trained-models-f2393f124751)⭐️
