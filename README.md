@@ -21,7 +21,7 @@ Ya da şöyle diyelim ben bir bardağı tanımak için atalarımdan bu yana ve d
  
 Bir yapay öğrenme modelinin öğrendiklerinden faydalanarak yeni bir problemi çözüyorsunuz. Öğrendiklerinin tamamını ya da bir kısmını transfer ederek bu işlemi gerçekleştiriyorsunuz. Tam da bu yüzden adı **Transfer Öğrenme**. Bazen sadece kendi modeliniz için basit özelliklerin öğrenilmesi için ayarlamalar yapıyorsanız bu kez adı **Fine-Tuning** oluyor. Bir başka versiyonu da örneğin verinizde _Golden_ ve _Husky_ cinsinde köpekler ve _Kadın_, _Erkek_ bireylerden oluşan insan görselleri var. Siz burada model ile **Köpek-İnsan** sınıflandırması yapabileceğiniz gibi **Kadın-Erkek** ya da **Golden-Husky** sınıflaması da yapabilirsiniz ki bu versiyonun adı da **Çoklu Öğrenme (Multi-Task Learning)** olarak isimlendirilir. Son konuya bir başka _Pazar Çalışması_ nda yer vereceğim. 
  
-![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/TL_FT.png)
+![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/blob/master/TL_FT.png)
 
 ---
 
@@ -37,7 +37,7 @@ Bir yapay öğrenme modelinin öğrendiklerinden faydalanarak yeni bir problemi 
 Aşağıdaki şema ile nasıl bir tercihte bulunabileceğimizi basit bir şekilde belirleyebiliriz.
 
 
-![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/TL_FN2.png)
+![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/blob/master/TL_FN2.png)
 
 
  🕵 O halde basit bir örnekle hem uçta çalıştırabileceğimiz bir test işlemini bir veri setinden öğrenmiş bir modelin nasıl test için kullanabileceğimize bakalım ve sonra da yalnızca bir kısmını kendi veri setiniz ile eğitip diğer bir kısmında öğrenilen ağırlıkları kullanabileceğiniz versiyonuna bakalım. 
