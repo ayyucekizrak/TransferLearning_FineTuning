@@ -2,39 +2,40 @@
 
 📌[![Open In Jupyter](https://github.com/jupyter/notebook/blob/master/docs/resources/icon_32x32.svg)](https://nbviewer.jupyter.org/github/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/TransferOgrenme_FineTuning/Fine_Tune_TransferOgrenme.ipynb) **Jupyter Not Defteri** 
 ---
-# Fine-Tuning ve Transfer Öğrenme Nedir?
-Fine-Tuning and Transfer Learning 👽
-
+# What is Fine-Tuning and Transfer Learning? 👽
 
 ---
-Bir kuşun öğrendiklerini size aktarabildiğini düşünün ya da sizin öğrendiklerinizi bir balığa, kulağa çılgınca geliyor değil mi? 
-Ya da şöyle diyelim ben bir bardağı tanımak için atalarımdan bu yana ve doğduğumdan beri öğrendiğim basit özellikler var (kenar, köşe, şekil, maddesel yapısı vb.) bunlardan yola çıkarak hiç görmediğim bardakları ya da hiç görmediğim bazı nesnelerin bardak olmadığına dair kararlar veriyorum. Yalnızca bu bilgiyi öğrenen bir makinenin bildiğiklerini başka bir makineye transfer edip tekrar öğrenme sürecini atlamasıdır desem! Neyse hadi başlayalım 😊
+For a moment, let's take a small step back from the nitty-gritty details of EfficientNet.🕊Imagine that a bird could pass on to you what it has learned. Or what you have learned you could pass to a fish-sounds crazy, right? 
+Let's just say, I have learned since I was born and from my ancestors to recognize a glass. There are simple features (edge, corner, shape, material structure, etc.). Turns out, something happens when machines learn-they transfer what they know and learn to other machines, skipping  the full learning process. 
 
- **Bilgisayarlı görü problemi üzerinden yola çıkalım ancak birçok veri ve problem tipi için uygulanabilecek bir yöntemden bahsediyorum. Öyle ki bir veri kümesi var sizin tanımak istediğiniz nesne de içinde var ancak veri seti çok büyük (bu harika bişey 😃) model de çok başarılı (e bu da harika 🤗) ama sizin o modeli o veri kümesi için eğitmeniz günler belki haftalar alacak. Gerçi burda eğitilmişi var!** 🧐 
+ 
+**Let us start with a computer vision problem, but I am talking about a method that can be applied to many types of data and problems. So there is a dataset inside the object you want to recognize, but the dataset is too big (this is awesome 😃), the model is also very successful (again, which is awesome 🤗), but it will take days and weeks to train that model for that dataset. It's trained here though!**  🧐
  
 
 ---
  
  ![](https://a4.pbase.com/o4/98/367898/1/59218520.tn_Braintransferwatercolor.jpg)
  
- 
- 
-Bir yapay öğrenme modelinin öğrendiklerinden faydalanarak yeni bir problemi çözüyorsunuz. Öğrendiklerinin tamamını ya da bir kısmını transfer ederek bu işlemi gerçekleştiriyorsunuz. Tam da bu yüzden adı **Transfer Öğrenme**. Bazen sadece kendi modeliniz için basit özelliklerin öğrenilmesi için ayarlamalar yapıyorsanız bu kez adı **Fine-Tuning** oluyor. Bir başka versiyonu da örneğin verinizde _Golden_ ve _Husky_ cinsinde köpekler ve _Kadın_, _Erkek_ bireylerden oluşan insan görselleri var. Siz burada model ile **Köpek-İnsan** sınıflandırması yapabileceğiniz gibi **Kadın-Erkek** ya da **Golden-Husky** sınıflaması da yapabilirsiniz ki bu versiyonun adı da **Çoklu Öğrenme (Multi-Task Learning)** olarak isimlendirilir. Son konuya bir başka _Pazar Çalışması_ nda yer vereceğim. 
+You've been solving a new problem by taking advantage of what an artificial learning model has learned before. You do this by transferring all or part of what the model has learned. I mean the weights. That's exactly why it's called **Transfer Learning**. Sometimes if you just make adjustments to learn the basic features for your model, this time it's called **Fine-Tuning**. Another version, for example, contains images of *dogs* of *Golden and Husky* genres and *human* images of *men and women*. Here you can do *Dog-Human* classification with the model, as well as *Female-Male* or *Golden-Husky* classification, which is called **Multi-Task Learning**.
  
 ![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/blob/master/TL_FT.png)
 
 ---
 
-🎯 **1. Versiyon:** Yalnızca bu parametreleri model için kullandığımızda test işlemini yaparak yeni bir sinir ağı tasarımı yapmayız. Tüm eğitilmiş modeli test için kullanabiliriz. Özellikle mobil ve gerçek zamanlı öğrenme gerektirmeyen uç noktada çalışacak sistemlerde bu yöntem uygulanmaktadır. Belli periyotlarla eğitim işlemi daha geniş verilerle tekrarlanıp sistem performansı artırılabilir.
+🎯 **#1 Version:** Yalnızca bu parametreleri model için kullandığımızda test işlemini yaparak yeni bir sinir ağı tasarımı yapmayız. Tüm eğitilmiş modeli test için kullanabiliriz. Özellikle mobil ve gerçek zamanlı öğrenme gerektirmeyen uç noktada çalışacak sistemlerde bu yöntem uygulanmaktadır. Belli periyotlarla eğitim işlemi daha geniş verilerle tekrarlanıp sistem performansı artırılabilir.
+
+When we use these parameters only for the model, we do not make a new neural network design by testing. We can use the entire trained model for testing. This method is used especially in mobile and real-time learning systems that do not require real-time learning. Periodic training can be repeated with larger data and system performance can be improved.
 
 
-🎯 **2. Versiyon:**  Eğitilmiş modelin bir kısmını alıp devamında veri kümesinde bulunmayan kendi problemimize ait veriler için eğitiriz. Böyle yaptığımızda Paratmetre hesabı yani işlem yükünü azaltmış oluyoruz ve zamandan da kazanmış oluyoruz. Aynı zamanda kendi problemimiz için verilerimiz kısıtlı olsa dahi bu yöntemle büyük veri setlerinde öğrenilen temel öznitelikler açısından da daha yüksek bir başarıya ulaşılmış olur. Fakat bu yöntemi uygularkan de dikkat etmemiz gereken stratejiler var. 
+🎯 **#2 Version:**  Eğitilmiş modelin bir kısmını alıp devamında veri kümesinde bulunmayan kendi problemimize ait veriler için eğitiriz. Böyle yaptığımızda Paratmetre hesabı yani işlem yükünü azaltmış oluyoruz ve zamandan da kazanmış oluyoruz. Aynı zamanda kendi problemimiz için verilerimiz kısıtlı olsa dahi bu yöntemle büyük veri setlerinde öğrenilen temel öznitelikler açısından da daha yüksek bir başarıya ulaşılmış olur. Fakat bu yöntemi uygularkan de dikkat etmemiz gereken stratejiler var. 
 
-> * Kullanacağımız veri önceden eğitilen modelin veri kümesiyle ne kadar benzer ya da farklı
+We take a part of the trained model and then train it for the data of our own problem which is not in the data set. When we do this, we reduce the Parameter account, that is, the transaction load and we save time. At the same time, even if our data is limited for our own problem, this method achieves a higher achievement in terms of the basic features learned in large data sets. But there are strategies that we need to pay attention to when applying this method.
 
-> *  Kullanacağımız verinin büyüklüğü
+> * How similar or different the data we use to the data set of the pre-trained model
 
-Aşağıdaki şema ile nasıl bir tercihte bulunabileceğimizi basit bir şekilde belirleyebiliriz.
+> * Size of the data we will use
+
+With the following scheme, we can simply determine how we can make a choice.
 
 
 ![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/blob/master/TL_FN2.png)
