@@ -16,20 +16,15 @@ Let's just say, I have learned since I was born and from my ancestors to recogni
  
  ![](https://a4.pbase.com/o4/98/367898/1/59218520.tn_Braintransferwatercolor.jpg)
  
-You've been solving a new problem by taking advantage of what an artificial learning model has learned before. You do this by transferring all or part of what the model has learned. I mean the weights. That's exactly why it's called **Transfer Learning**. Sometimes if you just make adjustments to learn the basic features for your model, this time it's called **Fine-Tuning**. Another version, for example, contains images of *dogs* of *Golden and Husky* genres and *human* images of *men and women*. Here you can do *Dog-Human* classification with the model, as well as *Female-Male* or *Golden-Husky* classification, which is called **Multi-Task Learning**.
+You've been solving a new problem by taking advantage of what a machine learning model has learned before. You do this by transferring all or part of what the model has learned. I mean the weights. That's exactly why it's called **Transfer Learning**. Sometimes if you just make adjustments to learn the basic features for your model, this time it's called **Fine-Tuning**. Another version, for example, contains images of *dogs* of *Golden and Husky* genres and *human* images of *men and women*. Here you can do *Dog-Human* classification with the model, as well as *Female-Male* or *Golden-Husky* classification, which is called **Multi-Task Learning**.
  
 ![](https://github.com/ayyucekizrak/TransferLearning_FineTuning/blob/master/TL_FT.png)
 
 ---
 
-🎯 **#1 Version:** Yalnızca bu parametreleri model için kullandığımızda test işlemini yaparak yeni bir sinir ağı tasarımı yapmayız. Tüm eğitilmiş modeli test için kullanabiliriz. Özellikle mobil ve gerçek zamanlı öğrenme gerektirmeyen uç noktada çalışacak sistemlerde bu yöntem uygulanmaktadır. Belli periyotlarla eğitim işlemi daha geniş verilerle tekrarlanıp sistem performansı artırılabilir.
+🎯 **#1 Version:** When we use these parameters only for the model, we do not make a new neural network design for testing. We can use the entire pre-trained model for testing. This method is used especially in mobile and real-time prediction systems that do not require real-time learning. Periodic training can be updated with larger data and system performance can be improved.
 
-When we use these parameters only for the model, we do not make a new neural network design by testing. We can use the entire trained model for testing. This method is used especially in mobile and real-time learning systems that do not require real-time learning. Periodic training can be repeated with larger data and system performance can be improved.
-
-
-🎯 **#2 Version:**  Eğitilmiş modelin bir kısmını alıp devamında veri kümesinde bulunmayan kendi problemimize ait veriler için eğitiriz. Böyle yaptığımızda Paratmetre hesabı yani işlem yükünü azaltmış oluyoruz ve zamandan da kazanmış oluyoruz. Aynı zamanda kendi problemimiz için verilerimiz kısıtlı olsa dahi bu yöntemle büyük veri setlerinde öğrenilen temel öznitelikler açısından da daha yüksek bir başarıya ulaşılmış olur. Fakat bu yöntemi uygularkan de dikkat etmemiz gereken stratejiler var. 
-
-We take a part of the trained model and then train it for the data of our own problem which is not in the data set. When we do this, we reduce the Parameter account, that is, the transaction load and we save time. At the same time, even if our data is limited for our own problem, this method achieves a higher achievement in terms of the basic features learned in large data sets. But there are strategies that we need to pay attention to when applying this method.
+🎯 **#2 Version:**  We take a part of the trained model and then train it for the data of our own problem which is not in the dataset. When we do this, we reduce the computational cost, that is,  we save time. At the same time, even if our data is limited to our own problem, this method achieves a higher performance in terms of the basic features learned in large datasets. But there are strategies that we need to pay attention to when implementing this method.
 
 > * How similar or different the data we use to the data set of the pre-trained model
 
