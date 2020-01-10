@@ -1,6 +1,7 @@
-📌[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/TransferOgrenme_FineTuning/Fine_Tune_TransferOgrenme.ipynb) **Google Colab Not Defteri**
+📌[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ayyucekizrak/TransferLearning_FineTuning/blob/master/Fine_Tuning_TransferLearning.ipynb) **Google Colab Not Defteri**
 
-📌[![Open In Jupyter](https://github.com/jupyter/notebook/blob/master/docs/resources/icon_32x32.svg)](https://nbviewer.jupyter.org/github/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/TransferOgrenme_FineTuning/Fine_Tune_TransferOgrenme.ipynb) **Jupyter Not Defteri** 
+📌[![Open In Jupyter](https://github.com/jupyter/notebook/blob/master/docs/resources/icon_32x32.svg)](https://nbviewer.jupyter.org/github/ayyucekizrak/TransferLearning_FineTuning/blob/master/Fine_Tuning_TransferLearning.ipynb) **Jupyter Not Defteri** 
+
 ---
 # What is Fine-Tuning and Transfer Learning? 👽
 
