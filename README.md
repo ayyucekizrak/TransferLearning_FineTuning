@@ -47,6 +47,7 @@ With the **ResNet** deep learning model trained on the **ImageNe**t dataset, you
 ![](https://github.com/ayyucekizrak/Udemy_DerinOgrenmeyeGiris/blob/master/TransferOgrenme_FineTuning/Algortihma.jpg)
 
 ---
+
  ✏️ **Use the links below for more resources:**
 
 [Comparison of Activation Functions for Deep Neural Networks](https://towardsdatascience.com/comparison-of-activation-functions-for-deep-neural-networks-706ac4284c8a)
